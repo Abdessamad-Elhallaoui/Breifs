@@ -1,0 +1,593 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+.head{
+background-image: url("./page-title-background.jpg");
+background-size: cover;
+background-position: center;
+height: 70VH;
+color: white;
+}
+.header{
+    height: 70PX;
+    overflow: hidden;
+    width: auto;
+   margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.header > *{
+margin:15px 0;
+}
+
+.menu li {
+display: inline-block;
+margin-left: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu p{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ic{
+position: absolute;
+top: 7%;
+RIGHT: 5%;
+display: none;
+
+}
+#menucheck{
+display: none;
+}
+#menucheck:checked ~ .menu{
+visibility: visible;
+}
+.prom1 button{
+    width: 200px;
+    height: 40px;
+border-radius: 41px;
+border: 1px solid #707070;
+background-color: #4c86fa;
+color: white;
+}
+footer{
+    height: 40px;
+    margin: auto;
+    background-color: #688095;
+    padding: 10px 10%;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer div{
+    width: 50%;
+    display: inline-block;
+}
+footer a{
+    margin-left: 14px;
+}
+@media (max-width:1024px)
+{
+    .menu{
+        font-size: small;
+    }
+}
+@media (max-width:800px)
+{
+    .menu{
+        visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 90%;
+    position: absolute;
+    top: 40px;
+    height: 90vh;
+    z-index: 9;
+
+    }
+    .menu ul{
+        width: 100%;
+        padding-top: 5px;
+    }
+    .menu li{
+        display: block;
+        font-size: 30px;
+        margin: auto;
+        margin-bottom: 17px;
+        border-bottom: black solid;
+        
+    }
+    .menu p {
+        text-align: center;
+        margin: auto;
+        font-size: 17px;
+        
+    }
+    .header{
+        flex-direction:column;
+        height: auto;
+        overflow: initial;
+    }
+    .ic{
+        display: block;
+    }
+  
+footer{
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+}
+footer div{
+    width: 100%;
+    
+}
+footer .copy{
+    margin-top: 10px;
+}
+}
+
+
+.center{
+    width: 100%;
+    height:80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.center .demi-center{
+    width: 50%;
+    text-align: center;
+}
+
+.details2{
+    margin: auto;
+}
+.details2 h1:first-of-type{
+    font-size: 70px;
+}
+.details2 h2{
+    font-size: 50px;
+}
+.details2 h1:last-of-type{
+    font-size: 80px;
+}
+.prom1{
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url("./aa.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+
+
+.poroms{
+width: 30%;
+position: relative;
+margin: auto;
+min-width:320px ;
+}
+.porom{
+    display: flex;
+    flex-wrap: wrap;
+    JUSTIFY-CONTENT: SPACE-EVENLY;
+}
+.pr1{
+background-image: url("./p.jpg");
+background-position: center;
+background-size: cover;
+width: 100%;
+display: inline-block;
+height: 350px;
+position: relative;
+z-index: -1;
+}
+.blank{
+    height: 50px;
+}
+.deals h1 {
+    text-align: center;
+}
+.c{
+    position: absolute;
+    top:10px;
+    left: -11px;
+    width: 160px;
+    height: 45px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.tri {
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    background: url("https://demo.goodlayers.com/traveltour/wp-content/plugins/tourmaster/images/ribbon-corner-shadow.png") 0px 0px no-repeat;
+    border-width: 0 10px 10px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  
+  }
+  .price{
+    height: 30%;
+    WIDTH: 90%;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    opacity: 0.5;
+    padding: 0 10px;
+
+  }
+  .price span:first-of-type{
+      float: left;
+  }
+  .price span:last-child{
+      float: right;
+  }
+  .bigdeals{
+      height: 90VH;
+      width: 100%;
+      background-image: url("./deals.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      
+
+  }
+  .details{
+      color: white;
+      width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+  }
+  .details a{
+    padding-top: 10px;
+    height: 45px;
+    width: 199px;
+    margin-left: 50px;
+    /* margin: 0 AUTO; */
+    border-radius: 15px;
+    border: 1px solid #707070;
+    background-color: #4c86fa;
+    text-align: center;
+  }
+  .details h1:first-of-type{
+      font-size: 100px;
+      margin-left: 50px;
+  }
+  .details h2{
+      font-size: 50px;
+      margin-left: 50px;
+  }
+  .details h1:last-of-type{
+      font-size: 120px;
+      margin-left: 50px;
+  }
+  .all{
+      width: 50%;
+
+  }
+  .package{
+      
+      background-color: white;
+      height: 200px;
+      opacity: 0.9;
+      margin: auto;
+    margin-top: 25%;
+    width: 75%;
+    
+      
+  }
+  .package h1{
+      text-align: center;
+      margin-bottom: 35px;
+      color: #4692e7;
+}
+  
+  .package div{
+      width: 80%;
+      margin: auto;
+      
+  }
+  .package ul{
+      display: grid;
+      grid-template-columns: auto auto;
+      list-style-type: none;
+      justify-content: space-between;
+  }
+  .words{
+      text-align: center;
+  }
+  .words + .blank{
+      height: 100px;
+  }
+  .t1{
+      text-align: center;
+      width: 30%;
+      border: 2px solid black;
+      border-radius: 20px;
+      height: 400px;
+      MIN-WIDTH: 290PX;
+      margin-top: 15px;
+      padding: 5%;
+      position: relative;
+  }
+ 
+  .Testimenials{
+      width: 95%;
+      margin: auto;
+      display:flex ;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+  .profile{
+      height: 120px;
+      width: 120px;
+      border: 1px solid ;
+      border-radius: 50%;
+      POSITION: absolute;
+      TOP: -70px;
+      left: -25px;
+  }
+  .P1{
+      background-image: url("/1.jpg");
+      background-size: cover;
+      background-position: center;
+  }
+  .P2{
+    background-image: url("/2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.P3{
+    background-image: url("/3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  .words h1{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .words b{
+      color: #4c86fa;
+      
+  }
+  .prom1 .details{
+      margin: auto;
+  }
+  .pr1{
+      color: white;
+  }
+  .pr1 h1
+  {
+      font-size: 23px;
+      font-weight: bold;
+  }
+  .poroms:last-of-type .c
+  {
+      background-color:#4692e7;
+
+  }
+  .package li i{
+    color:#4692e7;
+  }
+  .subscription{
+      height: 250px;
+      width: 100%;
+      background-image: url("./ami.jpeg");
+      background-position: center;
+      background-size: cover;
+      color: white;
+      
+      
+  }
+  .content{
+      width: 80%;
+      margin: auto;
+      line-height: 3em;
+      padding-top: 15PX;
+  }
+  .subscription input {
+    width: 60%;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: white;
+  }
+  .subscription a{
+    padding: 4px 75px 4px 15px;
+    border-radius: 5px;
+    background-color: #c49d48;
+    border-color: #c49d48;
+    color: white;
+    font-size: large;
+  }
+  .last{
+    display: flex;
+    margin: auto;
+    justify-content: SPACE-EVENLY;
+    width: 95%;
+    line-height: 28px;
+
+  }
+  .inputs{
+      
+    display: flex;
+    justify-content: space-between;
+}
+
+  
+  .d4 p{
+      margin-bottom: 30px;
+  }
+  .last .d1{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+  }
+  .d1 p{
+      width:90%;
+  }
+  .d2 {
+      width: 20%;
+  }
+  .d4{
+      width:25%;
+  }
+  .last .d2 li {
+    list-style-type: none;
+}
+  
+  @media(max-width:750px)
+{
+    .prom1{
+        width: 300px;
+        height: 300px;
+        bottom: -100px;
+        right: auto;
+    }
+    .poroms{
+        height: auto;
+    }
+    
+    .head + .blank{
+        height: 100px;
+    }
+    .center .demi-center{
+        width:auto;
+        text-align: center;
+    }
+    .center{
+        flex-direction: column;
+    }
+    .details{
+        width: 90%;
+        margin: auto;
+    }
+    .all{
+        position: absolute;
+    }
+    .all .package ul{
+        grid-template-columns: auto;
+    }
+    .package{
+        height: auto;
+        padding: 10px;
+    }
+    
+.details2 h1:first-of-type{
+    font-size: 35px;
+}
+.details2 h2{
+    font-size: 25px;
+}
+.details2 h1:last-of-type{
+    font-size: 50px;
+}
+    .poroms{
+        width: 60%;
+    }
+    
+    .subscription a{
+        width: max-content;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .subscription{
+        height: auto;
+    }
+    .subscription input
+    {
+        width: 100%;
+    }
+    .inputs{
+        
+        flex-direction: column;
+    }
+    .last .d1{
+        flex-direction: column-reverse;
+        width: 90%;
+        text-align: center;
+    }
+    .last .d2{
+        width: 90%;
+        text-align: center;
+        
+    }
+    .last .d2 li {
+        list-style-type: none;
+    }
+
+    .last .d4{
+        width: 90%;
+        text-align: center;
+    }
+    .last{
+        flex-direction: column;
+        align-items: center;    
+    }
+}
+@media (max-width:400px)
+{
+    .poroms{
+        min-width: 90%;
+    }
+    .package{
+        width: auto;
+    }
+    .package div{
+        width: auto;
+    }
+    
+  .details h1:first-of-type{
+    font-size: 50px;
+    margin-left: initial;
+    
+}
+.details h2{
+    font-size: 35px;
+    margin-left: initial;
+}
+.details h1:last-of-type{
+    font-size: 60px;
+    margin-left: initial;
+}
+.details a{
+    margin: initial;
+}
+.words h1{
+    font-size: 3.5em;
+}
+.pr1 h1{
+    font-size: 1.3em;
+}
+}
