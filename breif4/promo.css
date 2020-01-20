@@ -5,7 +5,7 @@
     font-family: "Open Sans";
 }
 .head{
-background-image: url("./page-title-background.jpg");
+background-image: url("./img/page-title-background.jpg");
 background-size: cover;
 background-position: center;
 height: 70VH;
@@ -91,8 +91,8 @@ footer a{
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     width: 90%;
     position: absolute;
     top: 40px;
@@ -109,7 +109,7 @@ footer a{
         font-size: 30px;
         margin: auto;
         margin-bottom: 17px;
-        border-bottom: black solid;
+        border-bottom: white solid;
         
     }
     .menu p {
@@ -138,6 +138,9 @@ footer div{
 }
 footer .copy{
     margin-top: 10px;
+}
+.package{
+    display: none;
 }
 }
 
@@ -173,7 +176,7 @@ footer .copy{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-image: url("./aa.jpg");
+    background-image: url("./img/aa.jpg");
     background-position: center;
     background-size: cover;
     display: grid;
@@ -193,8 +196,7 @@ min-width:320px ;
     flex-wrap: wrap;
     JUSTIFY-CONTENT: SPACE-EVENLY;
 }
-.pr1{
-background-image: url("./p.jpg");
+.pr1, .pr2, .pr3, .pr4, .pr5, .pr6{
 background-position: center;
 background-size: cover;
 width: 100%;
@@ -203,6 +205,25 @@ height: 350px;
 position: relative;
 z-index: -1;
 }
+.pr1{
+    background-image: url("./img/d.jpg");
+}
+.pr2{
+    background-image: url("./img/p.jpg");
+}
+.pr3{
+    background-image: url("./img/e.jpg");
+}
+.pr4{
+    background-image: url("./img/a.jpg");
+}
+.pr5{
+    background-image: url("./img/c.jpg");
+}
+.pr6{
+    background-image: url("./img/b.jpg");
+}
+
 .blank{
     height: 50px;
 }
@@ -245,6 +266,10 @@ z-index: -1;
     padding: 0 10px;
 
   }
+  .price span {
+      color:#4692e7; 
+      font-weight: bold;
+  }
   .price span:first-of-type{
       float: left;
   }
@@ -254,7 +279,7 @@ z-index: -1;
   .bigdeals{
       height: 90VH;
       width: 100%;
-      background-image: url("./deals.jpg");
+      background-image: url("./img/deals.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
@@ -359,17 +384,17 @@ z-index: -1;
       left: -25px;
   }
   .P1{
-      background-image: url("/1.jpg");
+      background-image: url("./img/1.jpg");
       background-size: cover;
       background-position: center;
   }
   .P2{
-    background-image: url("/2.jpg");
+    background-image: url("./img/2.jpg");
     background-size: cover;
     background-position: center;
 }
 .P3{
-    background-image: url("/3.jpg");
+    background-image: url("./img/3.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -384,10 +409,10 @@ z-index: -1;
   .prom1 .details{
       margin: auto;
   }
-  .pr1{
+  .poroms{
       color: white;
   }
-  .pr1 h1
+  .poroms h1
   {
       font-size: 23px;
       font-weight: bold;
@@ -403,7 +428,7 @@ z-index: -1;
   .subscription{
       height: 250px;
       width: 100%;
-      background-image: url("./ami.jpeg");
+      background-image: url("./img/ami.jpeg");
       background-position: center;
       background-size: cover;
       color: white;
@@ -502,6 +527,7 @@ z-index: -1;
     .package{
         height: auto;
         padding: 10px;
+        display: none;
     }
     
 .details2 h1:first-of-type{

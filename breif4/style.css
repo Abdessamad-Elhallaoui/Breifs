@@ -11,7 +11,7 @@
     height: 200px;
 }
 .head{
-    background-image: url("./dubai.png");
+    background-image: url("./img/back2.png");
     background-size: cover;
     background-position: center;
     height: auto;
@@ -251,7 +251,7 @@ text-align: left;
 .subscription{
     height: 250px;
     width: 100%;
-    background-image: url("./ami.jpeg");
+    background-image: url("./img/ami.jpeg");
     background-position: center;
     background-size: cover;
     color: white;
